@@ -36,7 +36,7 @@ This is a **multi-class image classification problem** with the following classe
 
 ### 📁 Dataset Structure
 
-tom_and_jerry/
+tom_and_jerry/<br>
 │
 ├── tom/ # Images containing only Tom<br>
 ├── jerry/ # Images containing only Jerry<br>
