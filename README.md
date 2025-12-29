@@ -64,9 +64,9 @@ Two CNN architectures were experimented with during this project.
 ### 🔹 Model 2 (Improved CNN – Final Model)
 - Optimized number of convolution filters
 - Dropout layer added to reduce overfitting
-- Better generalization performance on validation data
+- Improved generalization on validation data
 
-✔ **Model 2 achieved better validation accuracy and reduced overfitting**, and was selected as the final model.
+✔ **Model 2 achieved better validation performance and was selected as the final model.**
 
 ---
 
@@ -87,12 +87,31 @@ Two CNN architectures were experimented with during this project.
 
 ---
 
+### 🧪 Data Augmentation
+- Rotation  
+- Width & height shift  
+- Zoom  
+- Horizontal flip  
+
+### ⏹ Early Stopping & Best Model Selection
+To prevent overfitting and ensure optimal generalization, **EarlyStopping** was used during training:
+
+- **Monitored metric**: `val_loss`  
+- **Patience**: 10 epochs  
+- **Best weights restored automatically**
+
+The training process automatically stopped when validation loss stopped improving, and the model weights were restored to the epoch with the **lowest validation loss**.
+
+The final saved model represents the **best-performing version**, not necessarily the last training epoch.
+
+---
+
 ## 📈 Results
 
 - Training accuracy increased consistently
 - Validation accuracy stabilized with reduced overfitting
-- Best model checkpoint selected based on **validation loss**
-- Model performs well on unseen images, with reasonable confidence scores
+- Best model selected based on **lowest validation loss**
+- Model performs well on unseen images with reliable confidence scores
 
 > Occasional misclassifications are expected due to challenging frames, occlusions, and distortions — reflecting real-world conditions.
 
@@ -109,11 +128,11 @@ The trained model can:
 
 ## 🧪 Key Learnings
 
-- Importance of **train-validation split**
-- Handling **multi-class classification**
-- Preventing overfitting using **Dropout**
-- Effect of **data augmentation**
-- Understanding validation metrics over raw training accuracy
+- Importance of **train–validation split**
+- Handling **multi-class image classification**
+- Preventing overfitting using **Dropout** and **EarlyStopping**
+- Impact of **data augmentation**
+- Interpreting validation metrics for model selection
 
 ---
 
