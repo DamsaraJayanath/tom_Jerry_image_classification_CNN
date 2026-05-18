@@ -1,15 +1,12 @@
 # Tom & Jerry Image Classification using CNN
 
 ## Project Overview
-This project focuses on building a Convolutional Neural Network (CNN) to classify images from the popular cartoon Tom and Jerry.  
-The model identifies the presence of characters in an image and classifies it into four distinct categories.
+This project focuses on building a Convolutional Neural Network (CNN) to classify images from the popular cartoon Tom and Jerry. The model identifies the presence of characters in an image and classifies it into four distinct categories.
 
 ---
 
 ## Problem Statement
-Given an input image extracted from **Tom & Jerry cartoon episodes**, the model predicts **which characters appear in the frame**.
-
-This is a **multi-class image classification problem** with the following classes:
+Given an input image extracted from Tom & Jerry cartoon episodes the model predicts which characters appear in the frame. This is a multi-class image classification problem with the following classes:
 
 1. Tom – Image contains only Tom  
 2. Jerry – Image contains only Jerry  
