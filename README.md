@@ -36,7 +36,7 @@ tom_and_jerry/<br>
 
 
 
-### 🔗 Dataset Link
+###  Dataset Link
 Kaggle Dataset:  
 https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
 
@@ -46,13 +46,13 @@ https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
 
 Two CNN architectures were experimented with during this project.
 
-### 🔹 Model 1 (Baseline CNN)
+### 01. Model 1 (Baseline CNN)
 - Multiple convolutional layers with ReLU activation
 - MaxPooling layers for spatial reduction
 - Fully connected dense layers
 - Softmax output for 4-class classification
 
-### 🔹 Model 2 (Improved CNN – Final Model)
+### 02. Model 2 (Improved CNN – Final Model)
 - Optimized number of convolution filters
 - Dropout layer added to reduce overfitting
 - Improved generalization on validation data
@@ -74,7 +74,6 @@ Model 2 achieved better validation performance and was selected as the final mod
   - Zoom
   - Horizontal flip  
 
-- **Random seed fixed** for reproducibility
 
 ---
 
@@ -91,9 +90,7 @@ To prevent overfitting and ensure optimal generalization, **EarlyStopping** was 
 - **Patience**: 10 epochs  
 - **Best weights restored automatically**
 
-The training process automatically stopped when validation loss stopped improving, and the model weights were restored to the epoch with the **lowest validation loss**.
-
-The final saved model represents the **best-performing version**, not necessarily the last training epoch.
+The training process automatically stopped when validation loss stopped improving, and the model weights were restored to the epoch with the lowest validation loss. The final saved model represents the best-performing version not necessarily the last training epoch.
 
 ---
 
@@ -101,7 +98,7 @@ The final saved model represents the **best-performing version**, not necessaril
 
 - Training accuracy increased consistently
 - Validation accuracy stabilized with reduced overfitting
-- Best model selected based on **lowest validation loss**
+- Best model selected based on lowest validation loss
 - Model performs well on unseen images with reliable confidence scores
 
 > Occasional misclassifications are expected due to challenging frames, occlusions, and distortions — reflecting real-world conditions.
@@ -114,16 +111,6 @@ The trained model can:
 - Predict the class of a given image
 - Display the predicted label along with confidence score
 - Visualize predictions on unseen test images
-
----
-
-## Key Learnings
-
-- Importance of **train–validation split**
-- Handling **multi-class image classification**
-- Preventing overfitting using **Dropout** and **EarlyStopping**
-- Impact of **data augmentation**
-- Interpreting validation metrics for model selection
 
 ---
 
@@ -145,13 +132,6 @@ The trained model can:
 - Matplotlib
 - Google Colab
 
----
-
-## Repository Purpose
-This repository is intended for:
-- Demonstrating practical CNN implementation
-- Showcasing deep learning and computer vision skills
-- Portfolio and learning reference
 
 ---
 
