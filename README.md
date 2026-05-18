@@ -1,6 +1,6 @@
-# 🐱🐭 Tom & Jerry Image Classification using CNN
+# Tom & Jerry Image Classification using CNN
 
-## 📌 Project Overview
+## Project Overview
 This project focuses on building a **Convolutional Neural Network (CNN)** to classify images from the popular cartoon **Tom and Jerry**.  
 The model identifies the presence of characters in an image and classifies it into **four distinct categories**.
 
@@ -15,7 +15,7 @@ This project is well-suited for showcasing **computer vision fundamentals** and 
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 Given an input image extracted from **Tom & Jerry cartoon episodes**, the model predicts **which characters appear in the frame**.
 
 This is a **multi-class image classification problem** with the following classes:
@@ -27,14 +27,14 @@ This is a **multi-class image classification problem** with the following classe
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 - **Total images**: 5,478  
 - **Source**: Kaggle  
 - **Frame extraction**: 1 frame per second (1 FPS) from video clips  
 - **Labeling**: Manually labeled (100% ground-truth accuracy)
 
-### 📁 Dataset Structure
+### Dataset Structure
 
 tom_and_jerry/<br>
 │<br>
@@ -51,7 +51,7 @@ https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 Two CNN architectures were experimented with during this project.
 
@@ -70,7 +70,7 @@ Two CNN architectures were experimented with during this project.
 
 ---
 
-## ⚙️ Training Details
+## Training Details
 
 - **Framework**: TensorFlow & Keras  
 - **Input image size**: 224 × 224  
@@ -87,13 +87,13 @@ Two CNN architectures were experimented with during this project.
 
 ---
 
-### 🧪 Data Augmentation
+### Data Augmentation
 - Rotation  
 - Width & height shift  
 - Zoom  
 - Horizontal flip  
 
-### ⏹ Early Stopping & Best Model Selection
+### Early Stopping & Best Model Selection
 To prevent overfitting and ensure optimal generalization, **EarlyStopping** was used during training:
 
 - **Monitored metric**: `val_loss`  
@@ -106,7 +106,7 @@ The final saved model represents the **best-performing version**, not necessaril
 
 ---
 
-## 📈 Results
+## Results
 
 - Training accuracy increased consistently
 - Validation accuracy stabilized with reduced overfitting
@@ -117,7 +117,7 @@ The final saved model represents the **best-performing version**, not necessaril
 
 ---
 
-## 🔍 Model Inference
+## Model Inference
 
 The trained model can:
 - Predict the class of a given image
@@ -126,7 +126,7 @@ The trained model can:
 
 ---
 
-## 🧪 Key Learnings
+## Key Learnings
 
 - Importance of **train–validation split**
 - Handling **multi-class image classification**
@@ -136,7 +136,7 @@ The trained model can:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Apply **transfer learning** (e.g., MobileNetV2, ResNet)
 - Perform detailed **error analysis**
@@ -145,7 +145,7 @@ The trained model can:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python
 - TensorFlow
@@ -156,7 +156,7 @@ The trained model can:
 
 ---
 
-## 📌 Repository Purpose
+## Repository Purpose
 This repository is intended for:
 - Demonstrating practical CNN implementation
 - Showcasing deep learning and computer vision skills
@@ -164,7 +164,7 @@ This repository is intended for:
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 - Kaggle dataset contributors
 - TensorFlow & Keras documentation
 - Open-source deep learning community
