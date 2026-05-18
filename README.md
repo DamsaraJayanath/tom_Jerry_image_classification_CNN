@@ -81,13 +81,13 @@ Model 2 achieved better validation performance and was selected as the final mod
 - Horizontal flip  
 
 ### Early Stopping & Best Model Selection
-To prevent overfitting and ensure optimal generalization, **EarlyStopping** was used during training:
+To prevent overfitting and ensure optimal generalization, EarlyStopping was used during training:
 
 - **Monitored metric**: `val_loss`  
 - **Patience**: 10 epochs  
 - **Best weights restored automatically**
 
-The training process automatically stopped when validation loss stopped improving, and the model weights were restored to the epoch with the lowest validation loss. The final saved model represents the best-performing version not necessarily the last training epoch.
+> The training process automatically stopped when validation loss stopped improving, and the model weights were restored to the epoch with the lowest validation loss. The final saved model represents the best-performing version not necessarily the last training epoch.
 
 ---
 
@@ -97,8 +97,6 @@ The training process automatically stopped when validation loss stopped improvin
 - Validation accuracy stabilized with reduced overfitting
 - Best model selected based on lowest validation loss
 - Model performs well on unseen images with reliable confidence scores
-
-> Occasional misclassifications are expected due to challenging frames, occlusions, and distortions — reflecting real-world conditions.
 
 ---
 
@@ -113,10 +111,10 @@ The trained model can:
 
 ## Future Improvements
 
-- Apply **transfer learning** (e.g., MobileNetV2, ResNet)
-- Perform detailed **error analysis**
-- Implement **confusion matrix & class-wise accuracy**
-- Extend to **object detection** instead of classification
+1. Apply transfer learning (e.g., MobileNetV2, ResNet)
+2. Perform detailed error analysis
+3. Implement confusion matrix & class-wise accuracy
+4. Extend to object detection instead of classification
 
 ---
 
