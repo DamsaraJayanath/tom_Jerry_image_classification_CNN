@@ -3,7 +3,6 @@
 ## Project Overview
 This project focuses on building a Convolutional Neural Network (CNN) to classify images from the popular cartoon Tom and Jerry. The model identifies the presence of characters in an image and classifies it into four distinct categories.
 
----
 
 ## Problem Statement
 Given an input image extracted from Tom & Jerry cartoon episodes the model predicts which characters appear in the frame. This is a multi-class image classification problem with the following classes:
@@ -13,7 +12,7 @@ Given an input image extracted from Tom & Jerry cartoon episodes the model predi
 3. Tom & Jerry – Image contains both characters  
 4. Neither – Image contains neither Tom nor Jerry  
 
----
+
 
 ## Dataset Description
 
@@ -37,7 +36,6 @@ tom_and_jerry/<br>
 Kaggle Dataset:  
 https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
 
----
 
 ## Model Architecture
 
@@ -56,7 +54,6 @@ Two CNN architectures were experimented with during this project.
 
 Model 2 achieved better validation performance and was selected as the final model.
 
----
 
 ## Training Details
 
@@ -72,7 +69,6 @@ Model 2 achieved better validation performance and was selected as the final mod
   - Horizontal flip  
 
 
----
 
 ### Data Augmentation
 - Rotation  
@@ -89,7 +85,7 @@ To prevent overfitting and ensure optimal generalization, EarlyStopping was used
 
 > The training process automatically stopped when validation loss stopped improving, and the model weights were restored to the epoch with the lowest validation loss. The final saved model represents the best-performing version not necessarily the last training epoch.
 
----
+
 
 ## Results
 
@@ -98,7 +94,6 @@ To prevent overfitting and ensure optimal generalization, EarlyStopping was used
 - Best model selected based on lowest validation loss
 - Model performs well on unseen images with reliable confidence scores
 
----
 
 ## Model Inference
 
@@ -107,7 +102,6 @@ The trained model can:
 - Display the predicted label along with confidence score
 - Visualize predictions on unseen test images
 
----
 
 ## Future Improvements
 
@@ -116,7 +110,6 @@ The trained model can:
 3. Implement confusion matrix & class-wise accuracy
 4. Extend to object detection instead of classification
 
----
 
 ## Technologies Used
 
@@ -128,12 +121,9 @@ The trained model can:
 - Google Colab
 
 
----
-
 ## Acknowledgements
 - Kaggle dataset contributors
 - TensorFlow & Keras documentation
 - Open-source deep learning community
 
----
 
